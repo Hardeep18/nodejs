@@ -1,7 +1,8 @@
 FROM ubuntu
 
 # Core dependencies
-RUN apt-get update && apt-get install -y curl sudo
+RUN apt-get update && apt-get install -y curl sudo && \
+       apt-get -q -y install openssh-server
 
 # Node
 # Uncomment your target version
